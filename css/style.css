@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../content/fonts/TTLakes-Bold.eot');
+  src: local('TT Lakes Bold'), local('../assets/fonts/TTLakes-Bold'),
+    url('../content/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../content/fonts/TTLakes-Bold.woff') format('woff'),
+    url('../content/fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../content/fonts/TTLakes-Regular.eot');
+  src: local('TT Lakes Regular'), local('../assets/fonts/TTLakes-Regular'),
+    url('../content/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../content/fonts/TTLakes-Regular.woff') format('woff'),
+    url('../content/fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../content/fonts/TTLakes-Medium.eot');
+  src: local('TT Lakes Medium'), local('../assets/fonts/TTLakes-Medium'),
+    url('../content/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../content/fonts/TTLakes-Medium.woff') format('woff'),
+    url('../content/fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  background: none;
+}
+
+button {
+  background: white;
+  cursor: pointer;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "TT Lakes", "Verdana", sans-serif;
+  color: #000;
+}
+
+.brands {
+  background-color: #F2F2F2;
+  
+}
+
+.brands__tеxt{
+  padding: 16px;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: #7E7E82;
+  font-weight: 500;
+  border-top: 1px solid #D9FFF5;
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+.brands__swiper-container {
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    
+    max-height: 200px;
+}
+
+.swiper-container__swiper-wrapper {
+  display: flex;
+  padding-top: 16px;
+  padding-left: 16px;
+  
+}
+
+.swiper-wrapper__swiper-slide {
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  min-height: 72px;
+}
+
+
+.swiper-wrapper__swiper-slide:hover {
+  border-color: transparent;
+  box-shadow: 0 0 6px -1px #58F6DB;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 38px;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+  background-color: #DDDDDD;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #B5B6BC;
+}
+
+
+.button-open {
+  margin-left: 24px;
+  margin-top: 16px;
+  display: none;
+}
+
+.button-open__img {
+  margin-right: 9px;
+}
+
+.button-open__text {
+  background-color: #F2F2F2;
+  font-family: 'TT Lakes';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  color: #1B1C21;
+}
+
+.brands__arrows-btn {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .swiper-container__swiper-wrapper {
+    flex-wrap: wrap;
+    flex-direction:row;
+    
+    padding-left: 24px;
+    padding-right: 24px;
+    row-gap: 24px;
+    column-gap: 16px;
+    width: auto;
+
+}
+
+
+.swiper-wrapper__swiper-slide {
+min-width: 100px;  
+max-width: 224px;
+display:flex;
+justify-content: space-between;
+}
+  .pagination {
+      display: none;
+  }
+
+  .button-open {
+    display: block;
+    margin-left: 32px;
+    padding-bottom: 34px;
+    background-color: inherit;;
+
+  }
+
+  .button-open--opened {
+    margin-top: 46px;
+  }
+
+  .button-open--close {
+    margin-top: 16px;
+  }
+
+  
+  .over {
+    max-height: 1190px;
+      overflow-y: hidden;
+      -ms-overflow-style: none;
+      
+      transition: 5s;
+  
+    /*transition: 0,5s;
+    max-height: fit-content;*/
+  }
+  
+  .arrows_rotate {
+    transition: all 0.5s;
+    transform: rotate(180deg);
+  }
+  
+  .arrows_revers {
+    transition: all 0.5s;
+    transform: rotate(-360deg);
+  }
+}
+
+
+@media screen and (min-width: 1120px) {
+
+  .swiper-container__swiper-wrapper{
+    padding-left: 32px;
+    padding-right: 32px;
+    row-gap: 32px;
+    column-gap: 16px;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
