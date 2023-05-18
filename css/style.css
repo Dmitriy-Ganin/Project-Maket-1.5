@@ -131,8 +131,6 @@ body {
 
 
 .button-open {
-  margin-left: 24px;
-  margin-top: 16px;
   display: none;
 }
 
@@ -182,9 +180,9 @@ justify-content: space-between;
   .button-open {
     display: block;
     margin-left: 32px;
+    margin-top: 24px;
     padding-bottom: 34px;
-    background-color: inherit;;
-
+    background-color: inherit;
   }
 
   .button-open--opened {
@@ -192,30 +190,22 @@ justify-content: space-between;
   }
 
   .button-open--close {
-    margin-top: 16px;
+    margin-top: 24px;
   }
 
-  
-  .over {
+  .swiper-wrapper--open {
     max-height: 1190px;
       overflow-y: hidden;
       -ms-overflow-style: none;
-      
       transition: 5s;
-  
-    /*transition: 0,5s;
-    max-height: fit-content;*/
   }
   
   .arrows_rotate {
     transition: all 0.5s;
     transform: rotate(180deg);
+    margin-right: 9px;
   }
-  
-  .arrows_revers {
-    transition: all 0.5s;
-    transform: rotate(-360deg);
-  }
+
 }
 
 

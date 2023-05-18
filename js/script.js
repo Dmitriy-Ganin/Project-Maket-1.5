@@ -1,30 +1,19 @@
+const button = document.querySelector('.button-open');
+const cardsOpen = document.querySelector('.swiper-container');
+const buttonText = document.querySelector('.button-open__text');
 let img = document.querySelector('.button-open__img');
-let swiperC = document.querySelector('.swiper-container');
-let button = document.querySelector('.button-open');
 
-button.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    if (swiperC.classList.contains('over')) {
-    open()
+button.addEventListener("click", buttonClick);
+
+function buttonClick() {
+    cardsOpen.classList.toggle('swiper-wrapper--open');
+    if (cardsOpen.classList.contains('swiper-wrapper--open')) {
+        buttonText.textContent="Скрыть";
+        button.classList.add('button-open','button-open--opened');
+        img.classList.replace('button-open__img', 'arrows_rotate' );
     } else {
-     close()  
+      buttonText.textContent="Показать все";
+      button.classList.remove('button-open--opened','button-open--close');
+      img.classList.replace('arrows_rotate','button-open__img');
     }
-});
-
-function open() {
-  swiperC.classList.remove('over');
-        document.querySelector('.button-open__text').textContent = "Показать все";
-        img.classList.remove('arrows_rotate');
-        img.classList.add('arrows_revers');
-        button.classList.remove('button-open--close');
-        button.classList.add('button-open--opened');
-}
-
-function close() {
-  swiperC.classList.add('over');
-        document.querySelector('.button-open__text').textContent = "Скрыть";
-        img.classList.add('arrows_rotate');
-        img.classList.remove('arrows_revers');
-        button.classList.add('button-open--close');
-        button.classList.remove('button-open--opened');
 }
